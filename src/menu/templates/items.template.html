@@ -10,7 +10,7 @@
       </tr>
       </thead>
       <tbody>
-      <tr ng-repeat="item in $ctrl.items">
+      <tr ng-repeat="item in $ctrl.items | orderBy:'name'">
         <td>{{item.name}}</td>
         <td>{{item.short_name}}</td>
         <td >{{item.description}}</td>
