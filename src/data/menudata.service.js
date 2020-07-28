@@ -29,6 +29,7 @@
           params: {category: categoryShortName}
         })
         .then( (response) => {
+          jQuery( "#"+categoryShortName ).focus();
           return response.data.menu_items;
         })
         .catch( (error) => {
